@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Search form</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+   <script type = "text/javascript">
+	<!--
+		function clear_form(){
+			var question = confirm("Are you sure you want to clear email?");
+			if (! question){
+				return false;
+			}
+		}
+	//-->
+	</script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="pagetitle">
+        <h1>Search Total Points</h1>
+      </div>
+      <div id="main">
+        <form method="post" action="{{url_for('submitted_form')}}">
+		  <label for="email"><strong>Email:</strong></label>
+          <input type="text" name="email"><br /><br/>
+          <input type="submit" class="button">
+		  <input type ="reset" id = "reset" value="Clear"/>
+		  <br/><br/>
+        </form>
+      </div>
+    </div>
+	<script type = "text/javascript">
+	// Set reset button to the event handler !-->
+		document.getElementById("reset").onclick = clear_form;
+	//-->
+	</script>
+  </body>
+</html>
