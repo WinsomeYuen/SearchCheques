@@ -1,0 +1,99 @@
+/*General layout for all pages*/
+html,body {
+	padding: 10;
+	margin: 10;
+	height: 100%;
+	background-color: #4A3465;
+	font-family:Tw Cen MT;
+}
+
+.pagetitle {
+    color: #C40873;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #580495;
+}
+
+div{
+	margin: auto;
+    width: 50%;
+	min-width: 400px;
+    padding: 10px;
+	text-align:center;
+}
+
+table{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+/*div layout*/
+#container{
+  border: 1px solid #402c59;
+  border-radius: 4px;
+  background-color: white;
+  position: fixed; /*or absolute*/
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+    overflow-y:scroll;
+    height:100px;
+    min-width: 275px;
+}
+
+#cheq{
+    overflow-y:scroll;
+    overflow-x: visible;
+    height:100px;
+    min-width: 375px;
+}
+
+/*Layout for buttons*/
+.button, #reset, #submit{
+    background-color: #bf018e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	font-family:Tw Cen MT;
+}
+
+#back {
+    background-color: #111DB7;
+}
+
+/*Layout for tables*/
+#cheques td, #cheques th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#cheques tr:nth-child(even){background-color: #f2f2f2;}
+
+# tr:hover {background-color: #ddd;}
+
+#cheques th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #C40873;
+    color: white;
+}
+
+
+
+
